@@ -1,0 +1,16 @@
+.vertical-menu {
+    width: 100%;
+}
+
+.vertical-menu a {
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.vertical-menu a.active {
+    background-color: #1e88e5;
+    color: white;
+}
