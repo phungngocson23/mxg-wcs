@@ -1,0 +1,23 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-2">
+      <app-sidecontrol></app-sidecontrol>
+    </div>
+    <div class="col-10">
+      <table class="table">
+        <tr>
+          <th>{{ productColumnTitle.id }}</th>
+          <th>{{ productColumnTitle.product_name }}</th>
+          <th>{{ productColumnTitle.quantity }}</th>
+          <th>{{ productColumnTitle.price }}</th>
+        </tr>
+        <tr *ngFor="let product of products">
+          <td>{{ product.id }}</td>
+          <td>{{ product.product_name }}</td>
+          <td>{{ product.quantity }}</td>
+          <td>{{ showLocalCurrency(product.price)}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
